@@ -5,13 +5,21 @@ projeto react rapidamente, garantindo uma base sólida para SPA's.
 
 ## Instalando o Boilerplate
 
+Clone o repositório ou clique no botão "Use this template"
+
+> Caso você usar como template lembre-se de clonar o repositório criado a partir do template no seu diretório
+
 ```bash
-git clone
+git clone https://github.com/gildemardev/React-Vite-Boilerplate.git
 ```
+
+Instale as dependências
 
 ```bash
 npm install
 ```
+
+Inicie o projeto
 
 ```bash
 npm run dev
@@ -19,16 +27,17 @@ npm run dev
 
 ## Links úteis
 
-Documentações:
-[Documentação: Vite](https://link-url-here.org)
-[Documentação: TailwindCSS](https://link-url-here.org)
-[Documentação: ShadcnUI](https://link-url-here.org)
-[Documentação: Tanstack Router](https://link-url-here.org)
-[Documentação: Tanstack Query](https://link-url-here.org)
+| Documentações   | Link                                                                                                 |
+| --------------- | ---------------------------------------------------------------------------------------------------- |
+| Vite            | [Documentação: Vite](https://vitejs.dev/guide/)                                                      |
+| TailwindCSS     | [Documentação: TailwindCSS](https://tailwindcss.com/docs/installation)                               |
+| Shadcn UI       | [Documentação: ShadcnUI](https://ui.shadcn.com/docs/components/accordion)                            |
+| Tanstack Router | [Documentação: Tanstack Router](https://tanstack.com/router/latest/docs/framework/react/quick-start) |
+| Tanstack Query  | [Documentação: Tanstack Query](https://tanstack.com/query/latest)                                    |
 
-Utilidades:
-Personalize as cores, copie e cole no globals.css
-[Monte seu tema do Shadcn](https://ui.jln.dev/)
+Os componentes usados nas seções iniciais e o tema foram retirados daqui!
 
-As seções iniciais foram retiradas daqui! Você pode precisar de mais alguma
-[Templates usando Shadcn](https://shadcn-ui-blocks.vercel.app/)
+| Utilidades        | Link                                                       |
+| ----------------- | ---------------------------------------------------------- |
+| Gerador de temas  | [10000+ Shadcn Themes](https://ui.jln.dev/)                |
+| Shadcn HeroBlocks | [Templates que usei](https://shadcn-ui-blocks.vercel.app/) |
