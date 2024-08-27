@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "@tanstack/react-router";
 import { Blocks, ChevronRightIcon, Github } from "lucide-react";
 
 const Home: FC = () => {
@@ -12,7 +13,9 @@ const Home: FC = () => {
 					<div className='flex justify-center'>
 						<a
 							className='inline-flex items-center gap-x-2 border text-sm p-1 ps-3 rounded-full transition hover:border-foreground/50 duration-500'
-							href='#'>
+							href='https://github.com/gildemardev/React-Vite-Boilerplate'
+							target='_blank'
+							rel='noopener noreferrer'>
 							Versão 1.0 - Código Fonte
 							<span className='py-1.5 px-2.5 inline-flex justify-center items-center gap-x-2 rounded-full bg-muted-foreground/15 font-semibold text-sm '>
 								<ChevronRightIcon className='flex-shrink-0 w-4 h-4' />
@@ -37,16 +40,25 @@ const Home: FC = () => {
 					<div className='mt-8 gap-3 flex flex-col sm:flex-row justify-center'>
 						<Button
 							size={"lg"}
-							className='hover:-translate-y-1 transition-transform'>
-							<Github className='mr-2 size-5' />
-							Repositório
+							className='hover:-translate-y-1 transition-transform'
+							asChild>
+							<a
+								href='https://github.com/gildemardev/React-Vite-Boilerplate'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<Github className='mr-2 size-5' />
+								Repositório
+							</a>
 						</Button>
 						<Button
 							size={"lg"}
 							variant={"outline"}
-							className='hover:-translate-y-1 transition-transform'>
-							<Blocks className='mr-2 size-5' />
-							Funcionalidades
+							className='hover:-translate-y-1 transition-transform'
+							asChild>
+							<Link to='/about'>
+								<Blocks className='mr-2 size-5' />
+								Funcionalidades
+							</Link>
 						</Button>
 					</div>
 					{/* Fim Botões */}
@@ -71,7 +83,9 @@ const Home: FC = () => {
 						</svg>
 						<a
 							className='inline-flex items-center gap-x-1 text-sm decoration-2 hover:underline font-medium'
-							href='#'>
+							href='https://github.com/gildemardev/React-Vite-Boilerplate/blob/master/README.md'
+							target='_blank'
+							rel='noopener noreferrer'>
 							Guia de Instalação:
 							<ChevronRightIcon className='flex-shrink-0 w-4 h-4' />
 						</a>
